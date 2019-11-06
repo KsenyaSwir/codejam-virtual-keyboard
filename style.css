@@ -1,0 +1,143 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.textarea {
+  width: 800px;
+  height: auto;
+  margin: 30px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.keyboard {
+  width: auto;
+  height: auto;
+  font-size: 14px;
+}
+
+.keyboard__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.keyboard__key {
+  width: 3rem;
+  height: auto;
+  margin: 3px;
+  text-align: center;
+  line-height: 3rem;
+  border: 1px solid #269c26;
+  border-radius: 5px;
+}
+
+.keyboard__key:hover {
+  color: #FFF;
+  background: #33cc33;
+}
+
+.keyboard .Tab,
+.keyboard .Backspace {
+  width: 4.5rem;
+  height: 3rem;
+}
+
+.keyboard .CapsLock,
+.keyboard .ControlLeft,
+.keyboard .ControlRight,
+.keyboard .Enter {
+  width: 5.5rem;
+  height: 3rem;
+}
+
+.keyboard .ShiftLeft,
+.keyboard .ShiftRight {
+  width: 7rem;
+  height: 3rem;
+}
+
+.keyboard .ContextMenu,
+.keyboard .keyboard .AltLeft,
+.keyboard .keyboard .AltRight {
+  width: 3.5rem;
+  height: 3rem;
+}
+
+.keyboard .Space {
+  width: 18rem;
+  height: 3rem;
+}
+
+@-webkit-keyframes key {
+  from {
+    color: #FFF;
+    background: rgba(44, 232, 44, 0.966);
+    -webkit-transform: scale(1.125);
+            transform: scale(1.125);
+    opacity: 0.75;
+  }
+  to {
+    color: #FFF;
+    background: #1d4903;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes key {
+  from {
+    color: #FFF;
+    background: rgba(44, 232, 44, 0.966);
+    -webkit-transform: scale(1.125);
+            transform: scale(1.125);
+    opacity: 0.75;
+  }
+  to {
+    color: #FFF;
+    background: #1d4903;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.active {
+  -webkit-animation: key 0.3s linear;
+          animation: key 0.3s linear;
+}
+/*# sourceMappingURL=style.css.map */
